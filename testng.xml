@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/deepanshusingh8/hu_api_track2/.idea/workspace.xml"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name = "Testing in parallel " parallel="classes" thread-count="2">
+        <classes>
+            <class name="apiTest.getOperation"/>
+            <class name="apiTest.postOperation"/>
+
+
+
+        </classes>
+    </test>
+</suite>
